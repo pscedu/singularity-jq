@@ -3,16 +3,16 @@
 --
 -- "URL: https://www.psc.edu/resources/software"
 -- "Category: Other"
--- "Description: jq is a disk usage analyzer with an ncurses interface."
+-- "Description: jq is a lightweight and flexible command-line JSON processor."
 -- "Keywords: singularity utilities"
 
 whatis("Name: jq")
 whatis("Version: 1.6")
 whatis("Category: Other")
-whatis("Description: jq is a disk usage analyzer with an ncurses interface.")
+whatis("Description: jq is a lightweight and flexible command-line JSON processor.")
 
 help([[
-jq is a disk usage analyzer with an ncurses interface.
+jq is a lightweight and flexible command-line JSON processor.
 
 To load the module, type
 
