@@ -1,0 +1,17 @@
+#!/bin/bash
+
+VERSION=1.6
+PACKAGE=jq
+TOOL=$PACKAGE
+DIRECTORY=$(dirname $0)
+
+OPTIONS=""
+STORAGES=(/local /hive /bil)
+for STORAGE in "${STORAGES[@]}"
+do
+	if [ -d "$STORAGE" ]; then
+		OPTIONS=$OPTIONS" -B $STORAGE"
+	fi
+done
+
+singularity exec $OPTIONS $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
