@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/github/license/pscedu/singularity-jq)
 
 # singularity-jq
-<img src="https://stedolan.github.io/jq/jq.png" />
+<img src="https://stedolan.github.io/jq/jq.png" width="50%" />
 
 Singularity recipe for [jq](https://stedolan.github.io/jq/).
 
