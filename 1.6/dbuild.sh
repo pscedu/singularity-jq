@@ -4,4 +4,3 @@
 # All Rights Reserved.
 
 docker build -t icaoberg/jq:1.6 .
-docker push icaoberg/jq:1.6
