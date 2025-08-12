@@ -1,0 +1,17 @@
+Bootstrap: docker
+From: debian:latest
+
+%labels
+    MAINTAINER icaoberg
+    EMAIL icaoberg@psc.edu
+    SUPPORT help@psc.edu
+    REPOSITORY http://gitub.com/pscedu/singularity-jq
+    COPYRIGHT Copyright © 2021-2025 Pittsburgh Supercomputing Center. All Rights Reserved.    
+    VERSION 1.8.1
+
+%post 
+    apt update
+    apt-get -y install jq
+
+%runscript
+    jq "$@"
